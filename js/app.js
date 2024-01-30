@@ -5,6 +5,8 @@ const selectElement = (selector) => {
 };
 
 const menu = selectElement('#menu');
+const year = selectElement('#thisYear');
+year.innerHTML = new Date().getFullYear();
 const btnMenuToggle = selectElement('#btn-menu-toggle');
 btnMenuToggle.addEventListener('click', () => {
   menu.classList.toggle('activated');
@@ -18,4 +20,3 @@ document.querySelectorAll('.list-link').forEach(item => {
     menu.classList.toggle('activated');
   });
 });
-
