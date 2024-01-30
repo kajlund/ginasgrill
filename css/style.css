@@ -304,8 +304,6 @@ section {
   display: block;
 }
 
-
-
 /****************************
  * Animations
  ****************************/
@@ -334,4 +332,71 @@ section {
   0%   { transform: scale(1.5); opacity: 0; }
   50%  { transform: scale(2); opacity: 0.5; }
   100% { transform: scale(1); opacity: 1;   }
+}
+
+/****************************
+ * Services Section
+ ****************************/
+
+.services {
+  background: #eee;
+}
+
+.service {
+  padding: 3.5rem 0;
+  text-align: center;
+  margin-bottom: 2.8rem;
+  transition: var(--transition);
+}
+
+.service h4 {
+  color: #617d98;
+  font-size: 2.8rem;
+}
+
+.service-icon {
+  display: inline-block;
+  color: #617d98;
+  font-size: 3.5rem;
+  margin-bottom: 1.8rem;
+  transition: var(--transition);
+}
+
+.service-text {
+  font-size: 1.8rem;
+  color: #617d98;
+  max-width: 24rem;
+  margin: 0 auto;
+  padding: 0 1.4rem;
+}
+
+.service:hover {
+  background-color: #fff;
+  box-shadow: 0 2px var(--primary-color);
+}
+
+.service:hover .service-icon {
+  color: var(--primary-color);
+  transform: translateY(-5px); /* Lift the icon */
+}
+
+/* 2 cols on medium screens */
+@media screen and (min-width:576px) {
+  .services-center {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .service {
+    flex: 0 0 calc(50% - 1.4rem);
+    margin-bottom: 1.4rem;
+  }
+}
+
+/* 4 cols on larger screens */
+@media screen and (min-width:992px) {
+  .service {
+    flex: 0 0 calc(25% - 1.4rem);
+  }
 }
