@@ -484,3 +484,55 @@ section {
     text-align: left;
   }
 }
+
+/****************************
+ * About Section
+ ****************************/
+
+.about-map,
+.about-info {
+  text-align: center;
+  padding: 2.8rem 0;
+}
+
+.about-text {
+  font-size: 1.8rem;
+  margin: 1.4rem auto;
+  max-width: 33rem;
+  color: #617d98;;
+}
+
+.mapouter{
+  position:relative;
+  /* text-align:right; */
+  left: 0;
+  top:0;
+  min-height:400px;
+  width: 100%;
+}
+
+.gmap_canvas {
+  border: 0.2rem solid var(--primary-color);
+  overflow: hidden;
+  background: none!important;
+  min-height: 400px;
+  height: 400px;
+  width: 100%;
+}
+
+/* 2 cols on larger screens */
+@media screen and (min-width:1170px) {
+  .about-center {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  .about-map,
+  .about-info {
+    flex: 0 0 calc(50% - 5.6rem);
+    margin-bottom: 1.4rem;
+  }
+  .contact-info {
+    text-align: left;
+  }
+}
