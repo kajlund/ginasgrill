@@ -8,7 +8,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon.png">
     <!-- font-awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.6.3/css/all.min.css" />
-
+    <!-- Swiper.js styles -->
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css"/>
     <!-- Custom styles -->
     <link rel="stylesheet" href="./css/style.css">
 </head>
@@ -29,6 +30,9 @@
       </li>
       <li class="list-item">
         <a href="#contact" class="list-link">Contact Us</a>
+      </li>
+      <li class="list-item">
+        <a href="#gallery" class="list-link">Gallery</a>
       </li>
       <li class="list-item">
         <a href="#about" class="list-link">About Us</a>
@@ -161,22 +165,120 @@
 
 
     <!-- GALLERY -->
-    <div id="gallery" class="content-divider"></div>
-    <section class="gallery">
-      <p>Lorem, ipsum dolor sit amet consectetur adipisicing
-      elit. Dolor maxime consectetur nobis quod velit,
-      reiciendis, ex adipisci blanditiis nulla corrupti earum
-      asperiores assumenda eos magnam doloremque fugiat.
-      Provident at odio, culpa aliquid quo repudiandae sit
-      excepturi ducimus porro qui id fuga neque fugiat rerum
-      est possimus ad consectetur omnis unde reprehenderit
-      adipisci beatae molestiae ex. Mollitia sint illum vel
-      magnam a sit enim quam unde delectus dolores similique
-      voluptatibus totam, nulla optio doloremque porro dolorum,
-      velit sapiente nostrum, excepturi praesentium cumque?
-      Totam, labore laudantium, assumenda dicta voluptatem
-      rerum harum temporibus iusto commodi et magnam optio
-      consequatur illum corrupti tenetur provident?</p>
+    <section id="gallery">
+      <div class="section-center">
+        <div class="section-title">
+          <h2>Food <span>Gallery</span></h2>
+        </div>
+      </div>
+
+      <div class="container">
+        <!-- Slider main container -->
+      <div class="swiper gallery-slider">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/baconburger.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/batchoy.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/brownies.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/chickenfilletburger.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/chickenwings.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/chickenwings2.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/chicksilog.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/crispy.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/doublecheeseburger.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/friedchicken.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/friedchickenwithrice.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/gina.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/longsilog.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/macaroons.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/springrolls.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/strips.jpg" alt="">
+            </div>
+          </div>
+          <div class="swiper-slide gallery-slide">
+            <div class="gallery-slide-img">
+              <img src="./img/gallery/dessert.jpg" alt="">
+            </div>
+          </div>
+        </div>
+
+        <!-- Navigation buttons -->
+
+        <div class="gallery-slider-control">
+          <div class="swiper-button-prev slider-arrow">
+            <i class="fas fa-chevron-left"></i>
+          </div>
+            <div class="swiper-button-next slider-arrow">
+              <i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+        </div>
+      </div>
     </section>
     <!-- /GALLERY -->
 
@@ -228,6 +330,8 @@
   </footer>
   <!-- /FOOTER-->
 
+  <!-- Swiper.js -->
+  <script src="./js/swiper-bundle.min.js"></script>
   <script src="js/app.js"></script>
 
 </body>
