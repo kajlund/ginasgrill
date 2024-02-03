@@ -5,6 +5,7 @@
   --font-secondary: 'Parisienne', cursive;
 
   --font-color: rgba(0, 0, 0, 0.6);
+  --font-color-alt: #617d98;
   --primary-color: #f58c33;
   --primary-color-dk: #350900;
   --primary-color-lt: #e9b949;
@@ -331,6 +332,81 @@ section {
   50%  { transform: scale(2); opacity: 0.5; }
   100% { transform: scale(1); opacity: 1;   }
 }
+
+/****************************
+ * Prices section
+ ***************************/
+
+.section-title {
+  margin-bottom: 4rem;
+}
+
+.prices article {
+  padding: 0 2rem;
+  min-width: 40rem;
+}
+
+.prices-header {
+  background-color: #e89e30;
+  padding: 1.5rem 0;
+  text-align: center;
+}
+
+.prices-header h2 {
+  /* color: var(--primary-background-color); */
+  color: var(--font-color);
+  padding-top: 1rem;
+  font-size: var(--font-size-lg);
+  font-weight: 100;
+}
+
+.prices-description {
+  margin: 2rem auto 0 1rem;
+  text-align: center;
+  line-height: 0.8rem;
+}
+.prices-description p {
+  color: var(--font-color-alt);
+  font-weight: 600;
+}
+
+ul.leaders {
+  margin: 2rem 0;
+  color: #617d98;
+  font-size: 1.8rem;
+  line-height: 3rem;
+  /* max-width: 40rem; */
+  padding: 0;
+  overflow-x: hidden;
+  list-style: none
+}
+
+ul.leaders li:before {
+  float: left;
+  width: 0;
+  white-space: nowrap;
+  content:
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+    ". . . . . . . . . . . . . . . . . . . . "
+}
+
+ul.leaders span:first-child {
+  padding-right: 0.33em;
+  background: white;
+}
+
+ul.leaders span + span {
+float: right;
+padding-left: 0.33em;
+background: white
+}
+
 
 /****************************
  * Services Section
